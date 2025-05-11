@@ -62,6 +62,31 @@ body {
     background-color: #fff;
     border-radius: 8px;
   }
+
+  .blog-entry {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-entry h2 {
+    margin-bottom: 0.5rem;
+    color: #004225;
+  }
+  
+  .blog-entry .date {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1rem;
+    display: block;
+  }
+  
+  .blog-entry p {
+    line-height: 1.6;
+  }
+  
   
 
   .letter {
