@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Filter Demo</title>
+  <style>
+    .blog-filter {
+      margin: 1em 0;
+    }
+    .blog-filter button {
+      margin-right: 0.5em;
+      padding: 0.5em 1em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .blog-post {
+      padding: 1em;
+      margin-bottom: 1em;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Filter Menu -->
+  <div class="blog-filter">
+    <button onclick="filterBlogs('all')">All</button>
+    <button onclick="filterBlogs('satire')">Satire</button>
+    <button onclick="filterBlogs('devotion')">Devotion</button>
+    <button onclick="filterBlogs('history')">History</button>
+  </div>
+
+  <!-- Blog Posts -->
+  <div class="blog-posts">
+    <article class="blog-post" data-category="satire">
+      <h2>Paddy Macaroni</h2>
+      <p>Satirical take on Enlightenment Dublin with flamboyance and flair.</p>
+    </article>
+    <article class="blog-post" data-category="devotion">
+      <h2>Dear God</h2>
+      <p>A whispered prayer and heartfelt poetic reflection.</p>
+    </article>
+    <article class="blog-post" data-category="history">
+      <h2>The Bard of Ballymahone</h2>
+      <p>A historical tale of poetry, politics, and memory.</p>
+    </article>
+    <article class="blog-post" data-category="satire">
+      <h2>The Mad Priest of Ballynahinch</h2>
+      <p>Comic madness and rural mystery in a poitín-fuelled sermon.</p>
+    </article>
+  </div>
+
+  <!-- Script -->
+  <script>
+    function filterBlogs(category) {
+      const posts = document.querySelectorAll('.blog-post');
+      posts.forEach(post => {
+        const postCategory = post.getAttribute('data-category');
+        if (category === 'all' || postCategory === category) {
+          post.style.display = 'block';
+        } else {
+          post.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>

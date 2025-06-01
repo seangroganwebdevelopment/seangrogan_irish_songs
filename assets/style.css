@@ -139,4 +139,28 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+.blog-filter {
+  margin: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+}
+
+.blog-filter button {
+  padding: 0.5em 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  background-color: #42504a;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.blog-filter button:hover {
+  background-color: #034e2b;
+}
+
+
+
   

@@ -20,12 +20,35 @@
       <a href="gallery.html">Gallery</a>
       <a href="albums.html">Albums</a>
       <a href="contact.html">Contact</a>
+      <!-- Filter Menu -->
+
     </nav>
   </header>
 
   <main>
-<!-- Blog 1 -->
-    <section class="blog-entry">
+
+    <nav class="blog-filter">
+      <button onclick="filterBlogs('all')">All</button>
+      <button onclick="filterBlogs('life')">Life</button>
+      <button onclick="filterBlogs('music')">Music</button>
+      <button onclick="filterBlogs('satire')">Satire</button>
+      <button onclick="filterBlogs('devotion')">Devotion</button>
+      <button onclick="filterBlogs('gaeilge')">Gaeilge</button>
+      <button onclick="filterBlogs('countrylife')">Country Life</button>
+      <button onclick="filterBlogs('history')">History</button>
+      <button onclick="filterBlogs('languages')">Languages</button>
+      <button onclick="filterBlogs('sociallife')">Social Life</button>
+      <button onclick="filterBlogs('poets')">Poets</button>
+      <button onclick="filterBlogs('drink')">Drink</button>
+      <button onclick="filterBlogs('travels')">Travels</button>
+      <button onclick="filterBlogs('mind')">Mind</button>
+
+      <button onclick="filterBlogs('none')">None</button>
+
+
+    </nav>
+    <!-- Blog 1 - Memories of Brogan -->
+    <section class="blog-entry blog-post" data-category="life">
       <h2>How I Met Brogan</h2>
       <p class="date">Posted on 29 May 2025</p>
       <p>Memories of Brogan...</p>
@@ -98,7 +121,8 @@
       </p>
     </section>
 
-    <section class="blog-entry">
+    <!-- Blog 2 - The Stash Tour -->
+    <section class="blog-entry blog-post" data-category="music">
       <h2>Songs from the Stash — The Tour Begins</h2>
       <p class="date">Posted on May 29, 2025</p>
       <p><em>“Somewhere in a suitcase under my stairs, Brogan’s spirit was waiting.”</em> I never meant to go back on
@@ -186,13 +210,13 @@
       </p>
     </section>
 
-    <section class="blog-entry">
+    <!-- Blog 3 - Women -->
+    <section class="blog-entry blog-post" data-category="life">
       <h2>Lads, Legends, and Lamentations: The Women of Grogan & Brogan</h2>
       <p class="date">Posted on 29 May 2025</p>
       <p>Behind every Grogan or Brogan lies a woman with a sharper tongue, a better plan, or at the very least, a bottle
         of poitín labelled “for pain.”</p>
-          <img src="assets/rose-and-poitin-small.jpg"
-        alt="Grogan and Brogan meet a woman" class="blog-image"
+      <img src="assets/rose-and-poitin-small.jpg" alt="Grogan and Brogan meet a woman" class="blog-image"
         style="max-width: 20%; height: auto; margin: 1em 0;">
 
       <span id="entry3" style="display:none;">
@@ -230,14 +254,13 @@
       <a href="javascript:void(0);" id="entry3-link" onclick="toggleContent('entry3')">Read more</a>
     </section>
 
-<!-- Blog 4 -->
-    <section class="blog-entry">
+    <!-- Blog 4 Living Abroad-->
+    <section class="blog-entry blog-post" data-category="life">
       <h2>Grogan’s Guide to Living Abroad (Badly)</h2>
       <p class="date">Posted on 29 May 2025</p>
       <p>Whether you’re dodging rent in Birmingham or composing laments in a Luxembourg hostel, Grogan has thoughts —
         none of them useful.</p>
-        <img src="assets/grogan-living-abroad-small.jpg"
-        alt="Grogan living abroad" class="blog-image"
+      <img src="assets/grogan-living-abroad-small.jpg" alt="Grogan living abroad" class="blog-image"
         style="max-width: 20%; height: auto; margin: 1em 0;">
 
       <span id="entry4" style="display:none;">
@@ -281,7 +304,8 @@
       <a href="javascript:void(0);" id="entry4-link" onclick="toggleContent('entry4')">Read more</a>
     </section>
 
-    <section class="blog-entry">
+    <!-- Blog 5 The Blessed Pint-->
+    <section class="blog-entry blog-post" data-category="drink">
       <h2>In Praise of the Blessed Pint</h2>
       <p class="date">Posted on 29 May 2025</p>
       <p>Some say the black stuff is a drink. Grogan & Brogan know better: it’s a vocation, a philosophy, a slightly
@@ -338,9 +362,10 @@
       <a href="javascript:void(0);" id="entry7-link" onclick="toggleContent('entry7')">Read more</a>
     </section>
 
-    <section class="blog-entry">
+    <!-- Blog 6 Donkey in Irish Traditional Music-->
+    <section class="blog-entry blog-post" data-category="countrylife">
       <h2>The Donkey in Irish Traditional Music</h2>
-      <p class="date">Posted on 29 May 2025</p>
+      <p class=" date">Posted on 29 May 2025</p>
       <p>They carried turf, saints, poitín, and prophets. Now they carry meaning — especially in the songs of Grogan &
         Brogan.</p>
       <img src="assets/grogan-brogan-donkey-small.jpg" alt="Grogan & Brogan donkey with wreath, poitín jugs, and turf"
@@ -386,7 +411,8 @@
       <a href="javascript:void(0);" id="entry8-link" onclick="toggleContent('entry8')">Read more</a>
     </section>
 
-    <section class="blog-entry">
+    <!-- Blog 7 Poitin and Philosophy-->
+    <section class="blog-entry blog-post" data-category="drink">
       <h2>Poitín & Philosophy: The True Spirit of Irish Thought</h2>
       <p class="date">Posted on 29 May 2025</p>
       <p>Before Socrates had hemlock, Brogan had poitín. Only one of them lived to finish his thoughts — and his pint.
@@ -434,9 +460,9 @@
       <a href="javascript:void(0);" id="entry9-link" onclick="toggleContent('entry9')">Read more</a>
     </section>
 
-<!-- Blog 8 -->
+    <!-- Blog 8 Rural Ireland -->
 
-    <section class="blog-entry">
+    <section class="blog-entry blog-post" data-category="countrylife">
       <h2>Rural Ireland: A Love Letter in Turf and Absurdity</h2>
       <p class="date">Posted on 30 May 2025</p>
       <p>It is where time slows, donkeys whisper, and your sins are between you and the priest — unless he’s in the poem
@@ -490,7 +516,8 @@
       <a href="javascript:void(0);" id="entry10-link" onclick="toggleContent('entry10')">Read more</a>
     </section>
 
-    <section class="blog-entry">
+    <!-- Blog 9 Rural Ireland and the Sea -->
+    <section class="blog-entry blog-post" data-category="countrylife">
       <h2>Fishing the Irish Sea: Salt, Song & Survival</h2>
       <p class="date">Posted on 30 May 2025</p>
       <p>It’s not just work. It’s myth. It’s mourning. It’s where Grogan & Brogan cast their lines into history — and
@@ -541,8 +568,8 @@
       <a href="javascript:void(0);" id="entry11-link" onclick="toggleContent('entry11')">Read more</a>
     </section>
 
-<!-- Blog 10 -->
-    <section class="blog-entry">
+    <!-- Blog 10 Gaeilge-->
+    <section class="blog-entry blog-post" data-category="gaeilge">
       <h2>Gaeilge: Teanga na Fola, na Filíochta, agus na Fadhbanna</h2>
       <p class="date">Foilsithe ar 30 Bealtaine 2025</p>
       <p>Is í an Ghaeilge croítheanga G&B — fiú nuair nach dtuigeann siad a chéile, tuigtear an rud is tábhachtaí.</p>
@@ -580,7 +607,8 @@
       <a href="javascript:void(0);" id="entry12-link" onclick="toggleContent('entry12')">Léigh tuilleadh</a>
     </section>
 
-    <section class="blog-entry">
+    <!-- Blog 11 French, Un verre de Poitin-->
+    <section class="blog-entry blog-post" data-category="languages">
       <h2>“Un Verre de Poitín, s’il vous plaît”: Grogan & Brogan, French, and the Art of Exile</h2>
       <p class="date">Posted on 30 May 2025</p>
       <p>Grogan & Brogan speak French like they speak truth — awkwardly, poetically, and usually after one too many.</p>
@@ -627,12 +655,14 @@
       <a href="javascript:void(0);" id="entry13-link" onclick="toggleContent('entry13')">Read more</a>
     </section>
 
-    <section class="blog-entry">
+    <!-- Blog 12 Deutsch-->
+    <section class="blog-entry blog-post" data-category="languages">
       <h2>Grogan & Brogan sprechen Deutsch?</h2>
       <p class="date">Posted on 31 May 2025</p>
       <p>How did two Irish-rooted lads end up crooning in German? Sit tight...</p>
-   
-        <img src="assets/grogan-berlin-small.jpg" alt="Grogan reading Rilke with a pint and a sheep in Berlin" class="blog-image" style="max-width: 20%; height: auto; margin: 1em 0;" />
+
+      <img src="assets/grogan-berlin-small.jpg" alt="Grogan reading Rilke with a pint and a sheep in Berlin"
+        class="blog-image" style="max-width: 20%; height: auto; margin: 1em 0;" />
 
 
 
@@ -688,278 +718,380 @@
       <a href="javascript:void(0);" id="entry14-link" onclick="toggleContent('entry14')">Read more</a>
     </section>
 
-    <section class="blog-entry">
-  <h2>Grogan & Brogan in Namibia</h2>
-  <p class="date">Posted on 31 May 2025</p>
-  <p>What are two Irish lads doing writing songs about Namibia? It's not what you think...</p>
-  <img src="assets/grogan_brogan_namibia_web_optimized_800x800.webp" alt="Grogan in Namibia" class="blog-image" style="max-width: 20%; height: auto; margin: 1em 0;" />
+    <!-- Blog 13 Namibia -->
+    <section class="blog-entry blog-post" data-category="travels">
+      <h2>Grogan & Brogan in Namibia</h2>
+      <p class="date">Posted on 31 May 2025</p>
+      <p>What are two Irish lads doing writing songs about Namibia? It's not what you think...</p>
+      <img src="assets/grogan_brogan_namibia_web_optimized_800x800.webp" alt="Grogan in Namibia" class="blog-image"
+        style="max-width: 20%; height: auto; margin: 1em 0;" />
 
-  <span id="entry15" style="display:none;">
+      <span id="entry15" style="display:none;">
 
-    <p>🌍 <em>“It’s a long way from Ballymahone to Lüderitz.”</em></p>
+        <p>🌍 <em>“It’s a long way from Ballymahone to Lüderitz.”</em></p>
 
-    <p>That’s what Brogan said the first time we stood on the red earth near Shark Island — looking out at a cruel Atlantic that had carried so many Irish out, and so many others in.</p>
+        <p>That’s what Brogan said the first time we stood on the red earth near Shark Island — looking out at a cruel
+          Atlantic that had carried so many Irish out, and so many others in.</p>
 
-    <p>Namibia isn’t a place you expect to find in an Irish folk song. But for us, it was inevitable.</p>
+        <p>Namibia isn’t a place you expect to find in an Irish folk song. But for us, it was inevitable.</p>
 
-    <p>You see, Grogan’s grandfather — the mysterious “Großvater Herero” — served under a German flag in the colonial South West Africa campaigns. The details are muddy. Some say he deserted. Some say he joined the Nama resistance. All we know for certain is that he returned with a battered accordion and a hatred of uniforms.</p>
+        <p>You see, Grogan’s grandfather — the mysterious “Großvater Herero” — served under a German flag in the
+          colonial South West Africa campaigns. The details are muddy. Some say he deserted. Some say he joined the Nama
+          resistance. All we know for certain is that he returned with a battered accordion and a hatred of uniforms.
+        </p>
 
-    <p>Our song <strong><em>Großvater Herero</em></strong> is part family myth, part confession. It tells of guilt passed down like a tarnished heirloom. Of desert silence that never forgets. It’s a song where German mixes with Afrikaans, and history refuses to stay buried.</p>
+        <p>Our song <strong><em>Großvater Herero</em></strong> is part family myth, part confession. It tells of guilt
+          passed down like a tarnished heirloom. Of desert silence that never forgets. It’s a song where German mixes
+          with Afrikaans, and history refuses to stay buried.</p>
 
-    <p>Another piece, <strong><em>Shark Island Lament</em></strong>, follows the windblown ghosts of that concentration camp near Lüderitz — a song written for those whose names are not in the museums, but in the sand. The Irish in us saw it and knew it: colonisation doesn’t change its clothes, just its accent.</p>
+        <p>Another piece, <strong><em>Shark Island Lament</em></strong>, follows the windblown ghosts of that
+          concentration camp near Lüderitz — a song written for those whose names are not in the museums, but in the
+          sand. The Irish in us saw it and knew it: colonisation doesn’t change its clothes, just its accent.</p>
 
-    <p>Namibia showed us what happens when maps are drawn in blood and sand. And it made us wonder: where else has Ireland left its footprints, even where it never meant to?</p>
+        <p>Namibia showed us what happens when maps are drawn in blood and sand. And it made us wonder: where else has
+          Ireland left its footprints, even where it never meant to?</p>
 
-    <p>So yes — Namibia. A place of endless sky, and bottomless grief. But also of song. And sometimes that’s all we have to offer — a song, an old accordion, a memory passed down like a wound that sings.</p>
+        <p>So yes — Namibia. A place of endless sky, and bottomless grief. But also of song. And sometimes that’s all we
+          have to offer — a song, an old accordion, a memory passed down like a wound that sings.</p>
 
-    <p>If you ever hear a G&B tune with a desert drone and a Berlin echo, now you know why.</p>
+        <p>If you ever hear a G&B tune with a desert drone and a Berlin echo, now you know why.</p>
 
-    <p>With dust in our boots and guilt in our harmonies,</p>
+        <p>With dust in our boots and guilt in our harmonies,</p>
 
-    <p><strong>Grogan & Brogan</strong></p>
+        <p><strong>Grogan & Brogan</strong></p>
 
-  </span>
-  <a href="javascript:void(0);" id="entry15-link" onclick="toggleContent('entry15')">Read more</a>
-</section>
+      </span>
+      <a href="javascript:void(0);" id="entry15-link" onclick="toggleContent('entry15')">Read more</a>
+    </section>
 
-<!-- Blog 14 -->
-<section class="blog-entry">
-  <h2>Grogan & Brogan’s Worst Gig</h2>
-  <p class="date">Posted on 31 May 2025</p>
-  <p>You think you've had a bad night? Try this on for size…</p>
-  <img src="assets/grogan-worst-gig-with-brogan-small.jpg" alt="Grogan's Worst Gig" class="blog-image" style="max-width: 20%; height: auto; margin: 1em 0;" />
+    <!-- Blog 14 Worst Gig -->
+    <section class="blog-entry blog-post" data-category="music">
+      <h2>Grogan & Brogan’s Worst Gig</h2>
+      <p class="date">Posted on 31 May 2025</p>
+      <p>You think you've had a bad night? Try this on for size…</p>
+      <img src="assets/grogan-worst-gig-with-brogan-small.jpg" alt="Grogan's Worst Gig" class="blog-image"
+        style="max-width: 20%; height: auto; margin: 1em 0;" />
 
-  <span id="entry5" style="display:none;">
+      <span id="entry5" style="display:none;">
 
-    <p>🎤 <em>“The soundman was drunk, the mic was dead, and the only person clapping was a dog.”</em></p>
+        <p>🎤 <em>“The soundman was drunk, the mic was dead, and the only person clapping was a dog.”</em></p>
 
-    <p>That, in a nutshell, was <strong>Grogan & Brogan’s worst gig</strong>. But it started, as these things do, with misplaced hope and a dodgy promise.</p>
+        <p>That, in a nutshell, was <strong>Grogan & Brogan’s worst gig</strong>. But it started, as these things do,
+          with misplaced hope and a dodgy promise.</p>
 
-    <p>We were booked to play at what was billed as the “Kilcar Cultural Weekender.” The poster had a harp, a pint, and what appeared to be the ghost of Patrick Kavanagh photoshopped into a kayak. We should have known.</p>
+        <p>We were booked to play at what was billed as the “Kilcar Cultural Weekender.” The poster had a harp, a pint,
+          and what appeared to be the ghost of Patrick Kavanagh photoshopped into a kayak. We should have known.</p>
 
-    <p>The venue turned out to be the back room of a chipper, directly adjacent to the fryer. Half the crowd were there for battered sausages. The other half were the staff.</p>
+        <p>The venue turned out to be the back room of a chipper, directly adjacent to the fryer. Half the crowd were
+          there for battered sausages. The other half were the staff.</p>
 
-    <p>Brogan had tuned his bouzouki to open C# minor for dramatic effect. Grogan opened with a heartfelt rendition of <em>“Lament for a Lost Librarian.”</em> The silence that followed could have cured insomnia.</p>
+        <p>Brogan had tuned his bouzouki to open C# minor for dramatic effect. Grogan opened with a heartfelt rendition
+          of <em>“Lament for a Lost Librarian.”</em> The silence that followed could have cured insomnia.</p>
 
-    <p>Things got worse. The organiser vanished halfway through. The “lighting technician” was a teenager with a vape and a torch. Midway through our third number, a fight broke out near the condiment counter — allegedly over who invented curry chips.</p>
+        <p>Things got worse. The organiser vanished halfway through. The “lighting technician” was a teenager with a
+          vape and a torch. Midway through our third number, a fight broke out near the condiment counter — allegedly
+          over who invented curry chips.</p>
 
-    <p>The final straw? A child climbed onto the “stage” and screamed: <strong>“YOU’RE NOT EVEN ON SPOTIFY!”</strong></p>
+        <p>The final straw? A child climbed onto the “stage” and screamed: <strong>“YOU’RE NOT EVEN ON
+            SPOTIFY!”</strong></p>
 
-    <p>He was right. We weren’t. We still aren’t.</p>
+        <p>He was right. We weren’t. We still aren’t.</p>
 
-    <p>We finished our set with the dignity of monks on fire and collected our fee: two cans of Club Orange and a voucher for garlic mushrooms (expired). Brogan wept silently into his accordion case. Grogan took a vow never to perform again in any venue where coleslaw is served by the litre.</p>
+        <p>We finished our set with the dignity of monks on fire and collected our fee: two cans of Club Orange and a
+          voucher for garlic mushrooms (expired). Brogan wept silently into his accordion case. Grogan took a vow never
+          to perform again in any venue where coleslaw is served by the litre.</p>
 
-    <p>So yes, that was the worst gig.</p>
+        <p>So yes, that was the worst gig.</p>
 
-    <p>But the thing is — we still wrote a song about it. And the dog did clap. With its tail. And sometimes, that’s enough.</p>
+        <p>But the thing is — we still wrote a song about it. And the dog did clap. With its tail. And sometimes, that’s
+          enough.</p>
 
-    <p>Never again, Kilcar. Unless the cheque clears.</p>
+        <p>Never again, Kilcar. Unless the cheque clears.</p>
 
-    <p><strong>Grogan & Brogan</strong></p>
+        <p><strong>Grogan & Brogan</strong></p>
 
-  </span>
-  <a href="javascript:void(0);" id="entry5-link" onclick="toggleContent('entry5')">Read more</a>
-</section>
+      </span>
+      <a href="javascript:void(0);" id="entry5-link" onclick="toggleContent('entry5')">Read more</a>
+    </section>
 
-<!-- Blog 16 -->
- <section class="blog-entry">
-  <h2>Grogan, Memory & the Madness of History</h2>
-  <p class="date">Posted on 31 May 2025</p>
-  <p>He’s a man of many tunes and a memory like a museum. But what exactly is Grogan's relationship with history?</p>
-  <img src="assets/grogan-history-small.jpg" alt="Grogan looking into the past" class="blog-image" style="max-width: 20%; height: auto; margin: 1em 0;" />
+    <!-- Blog 15 Memory & Madness of History -->
+    <section class="blog-entry blog-post" data-category="history">
+      <h2>Grogan, Memory & the Madness of History</h2>
+      <p class="date">Posted on 31 May 2025</p>
+      <p>He’s a man of many tunes and a memory like a museum. But what exactly is Grogan's relationship with history?
+      </p>
+      <img src="assets/grogan-history-small.jpg" alt="Grogan looking into the past" class="blog-image"
+        style="max-width: 20%; height: auto; margin: 1em 0;" />
 
-  <span id="entry16" style="display:none;">
+      <span id="entry16" style="display:none;">
 
-    <p>🕯 <em>“History isn’t a story, it’s a haunting.”</em> — Grogan, to Brogan, somewhere between Doolin and Dún Laoghaire.</p>
+        <p>🕯 <em>“History isn’t a story, it’s a haunting.”</em> — Grogan, to Brogan, somewhere between Doolin and Dún
+          Laoghaire.</p>
 
-    <p>Grogan has always been fascinated by the past — not in the way of academics or archivists, but like a man who's convinced the dead are still whispering. Whether in a famine field, an abandoned convent, or a pub that remembers the Tan War better than its drink prices, Grogan listens.</p>
+        <p>Grogan has always been fascinated by the past — not in the way of academics or archivists, but like a man
+          who's convinced the dead are still whispering. Whether in a famine field, an abandoned convent, or a pub that
+          remembers the Tan War better than its drink prices, Grogan listens.</p>
 
-    <p>And the past speaks to him. In songs.</p>
+        <p>And the past speaks to him. In songs.</p>
 
-    <p>Take <strong><em>The Exile’s Lament</em></strong>: a song that blurs the sorrow of one man’s forced departure from Ireland with the wider grief of a nation broken by emigration. Or <strong><em>Großvater Herero</em></strong>, which traces a familial thread back to colonial Namibia and unearths not just ancestry, but atrocity.</p>
+        <p>Take <strong><em>The Exile’s Lament</em></strong>: a song that blurs the sorrow of one man’s forced departure
+          from Ireland with the wider grief of a nation broken by emigration. Or <strong><em>Großvater
+              Herero</em></strong>, which traces a familial thread back to colonial Namibia and unearths not just
+          ancestry, but atrocity.</p>
 
-    <p>There’s reverence in these songs — for loss, for dignity, for complexity. But there’s also a slyness. Grogan never lets sentimentality rot the roots. Songs like <strong><em>Paddy Macaroni</em></strong> and <strong><em>The Bard of Ballymahone</em></strong> poke fun at Ireland’s obsession with its own myths, even while participating in them.</p>
+        <p>There’s reverence in these songs — for loss, for dignity, for complexity. But there’s also a slyness. Grogan
+          never lets sentimentality rot the roots. Songs like <strong><em>Paddy Macaroni</em></strong> and
+          <strong><em>The Bard of Ballymahone</em></strong> poke fun at Ireland’s obsession with its own myths, even
+          while participating in them.</p>
 
-    <p>Brogan once said: <em>“Grogan respects history the way a cat respects furniture — it’s sacred, but still gets clawed.”</em></p>
+        <p>Brogan once said: <em>“Grogan respects history the way a cat respects furniture — it’s sacred, but still gets
+            clawed.”</em></p>
 
-    <p>That’s true. In <strong><em>Shark Island Lament</em></strong>, we hear Grogan's reverence in the way he channels the voice of the dead — but his rage seeps through in the very choice to sing about something so many have forgotten.</p>
+        <p>That’s true. In <strong><em>Shark Island Lament</em></strong>, we hear Grogan's reverence in the way he
+          channels the voice of the dead — but his rage seeps through in the very choice to sing about something so many
+          have forgotten.</p>
 
-    <p>In other songs — like <strong><em>The Poet of Old</em></strong> — Grogan takes history personally. It’s not some distant tapestry. It’s a coat he wears, even if it’s itchy. Memory is not a luxury. It’s the price of being awake.</p>
+        <p>In other songs — like <strong><em>The Poet of Old</em></strong> — Grogan takes history personally. It’s not
+          some distant tapestry. It’s a coat he wears, even if it’s itchy. Memory is not a luxury. It’s the price of
+          being awake.</p>
 
-    <p>And so, in every verse, he reanimates the past. Not as nostalgia — but as resistance.</p>
+        <p>And so, in every verse, he reanimates the past. Not as nostalgia — but as resistance.</p>
 
-    <p>In the G&B universe, history is not a thing that happened. It’s a ghost that still sings. And Grogan, despite his cranky scepticism, remains its unlikely cantor — braying, ballading, bellowing… for all the voices that never got to.</p>
+        <p>In the G&B universe, history is not a thing that happened. It’s a ghost that still sings. And Grogan, despite
+          his cranky scepticism, remains its unlikely cantor — braying, ballading, bellowing… for all the voices that
+          never got to.</p>
 
-    <p><strong>Grogan & Brogan</strong></p>
+        <p><strong>Grogan & Brogan</strong></p>
 
-  </span>
-  <a href="javascript:void(0);" id="entry16-link" onclick="toggleContent('entry16')">Read more</a>
-</section>
+      </span>
+      <a href="javascript:void(0);" id="entry16-link" onclick="toggleContent('entry16')">Read more</a>
+    </section>
 
-<!-- Blog 17 -->
- <section class="blog-entry">
-  <h2>Grogan & Brogan on Mental Health</h2>
-  <p class="date">Posted on 31 May 2025</p>
-  <p>It’s not all poitín and punchlines. Sometimes, it’s just you and the silence…</p>
-  <img src="assets/grogan-mental-health-small.jpg" alt="Grogan & Brogan on Mental Health" class="blog-image" style="max-width: 20%; height: auto; margin: 1em 0;" />
+    <!-- Blog 16 Mental Health -->
+    <section class="blog-entry blog-post" data-category="mind"">
+      <h2>Grogan & Brogan on Mental Health</h2>
+      <p class="date">Posted on 31 May 2025</p>
+      <p>It’s not all poitín and punchlines. Sometimes, it’s just you and the silence…</p>
+      <img src="assets/grogan-mental-health-small.jpg" alt="Grogan & Brogan on Mental Health" class="blog-image"
+        style="max-width: 20%; height: auto; margin: 1em 0;" />
 
-  <span id="entry17" style="display:none;">
+      <span id="entry17" style="display:none;">
 
-    <p>🧠 <em>“I talk to my donkey. The donkey doesn’t answer. And somehow that helps.”</em> — Grogan</p>
+        <p>🧠 <em>“I talk to my donkey. The donkey doesn’t answer. And somehow that helps.”</em> — Grogan</p>
 
-    <p>For all the laughs, the wigs, the wild gigs and wandering, Grogan & Brogan have never shied away from the shadows. If anything, they walk beside them — quietly, stubbornly, like men who know the road is long and often lonely.</p>
+        <p>For all the laughs, the wigs, the wild gigs and wandering, Grogan & Brogan have never shied away from the
+          shadows. If anything, they walk beside them — quietly, stubbornly, like men who know the road is long and
+          often lonely.</p>
 
-    <p>In songs like <strong><em>Mental Health in the West of Ireland (1968)</em></strong>, we hear it clearly: a world where men talk to animals because there’s no one else to talk to. Where emotional pain is wrapped in silence, or smothered under a layer of turf smoke and sarcasm.</p>
+        <p>In songs like <strong><em>Mental Health in the West of Ireland (1968)</em></strong>, we hear it clearly: a
+          world where men talk to animals because there’s no one else to talk to. Where emotional pain is wrapped in
+          silence, or smothered under a layer of turf smoke and sarcasm.</p>
 
-    <p>Grogan has never claimed to have answers. But he has songs. And sometimes that’s the first light in the bog.</p>
+        <p>Grogan has never claimed to have answers. But he has songs. And sometimes that’s the first light in the bog.
+        </p>
 
-    <p><strong><em>Without You</em></strong> offers another take — a raw, almost prayer-like appeal to love as the thread that holds us together. Not romantic love. But the kind that keeps you going when your own mind tries to leave you behind.</p>
+        <p><strong><em>Without You</em></strong> offers another take — a raw, almost prayer-like appeal to love as the
+          thread that holds us together. Not romantic love. But the kind that keeps you going when your own mind tries
+          to leave you behind.</p>
 
-    <p>There’s humour too — because there has to be. <strong><em>The Mad Priest of Ballynahinch</em></strong> might raise eyebrows, but it’s also a portrait of someone unravelled by guilt, faith, and the quiet violence of isolation.</p>
+        <p>There’s humour too — because there has to be. <strong><em>The Mad Priest of Ballynahinch</em></strong> might
+          raise eyebrows, but it’s also a portrait of someone unravelled by guilt, faith, and the quiet violence of
+          isolation.</p>
 
-    <p>Brogan puts it simply: <em>“We write these songs because we needed them ourselves first.”</em></p>
+        <p>Brogan puts it simply: <em>“We write these songs because we needed them ourselves first.”</em></p>
 
-    <p>And maybe that’s the point. Not to fix it. Not to tidy it. But to say it. To sing it. To give the sadness a tune, so it has somewhere to go.</p>
+        <p>And maybe that’s the point. Not to fix it. Not to tidy it. But to say it. To sing it. To give the sadness a
+          tune, so it has somewhere to go.</p>
 
-    <p>If you’ve ever stared at the sea too long, or felt too tired to explain the storm in your chest, know this: Grogan’s probably already written it down. And Brogan’s somewhere behind him, tuning the bouzouki.</p>
+        <p>If you’ve ever stared at the sea too long, or felt too tired to explain the storm in your chest, know this:
+          Grogan’s probably already written it down. And Brogan’s somewhere behind him, tuning the bouzouki.</p>
 
-    <p><strong>Grogan & Brogan</strong></p>
+        <p><strong>Grogan & Brogan</strong></p>
 
-  </span>
-  <a href="javascript:void(0);" id="entry17-link" onclick="toggleContent('entry17')">Read more</a>
-</section>
+      </span>
+      <a href="javascript:void(0);" id="entry17-link" onclick="toggleContent('entry17')">Read more</a>
+    </section>
 
-<!-- Blog 18 -->
+    <!-- Blog 18Aleksandr Blok -->
+    <section class="blog-entry blog-post" data-category="poets">
+      <h2>Grogan & Aleksandr Blok: A Strange Devotion</h2>
+      <p class="date">Posted on 31 May 2025</p>
+      <p>You wouldn’t think an Irish cultural Appropriator would find a kindred soul in a dead Russian Symbolist. But then again, you
+        haven’t met Grogan.</p>
+      <img src="assets/grogan-and-blok-alt-small.jpg" alt="Grogan and Aleksandr Blok" class="blog-image"
+        style="max-width: 20%; height: auto; margin: 1em 0;" />
 
-<section class="blog-entry">
-  <h2>Grogan & Aleksandr Blok: A Strange Devotion</h2>
-  <p class="date">Posted on 31 May 2025</p>
-  <p>You wouldn’t think an Irishman would find a kindred soul in a dead Russian Symbolist. But then again, you haven’t met Grogan.</p>
-  <img src="assets/grogan-and-blok-alt-small.jpg" alt="Grogan and Aleksandr Blok" class="blog-image" style="max-width: 20%; height: auto; margin: 1em 0;" />
+      <span id="entry8" style="display:none;">
 
-  <span id="entry8" style="display:none;">
+        <p>📖 <em>“I do not love the living — only the dead who still speak.”</em> — Grogan, quoting Blok to a startled
+          Latvian customs officer</p>
 
-    <p>📖 <em>“I do not love the living — only the dead who still speak.”</em> — Grogan, quoting Blok to a startled Latvian customs officer</p>
+        <p>There are obsessions. And then there’s Grogan’s relationship with the Russian poet Aleksandr Blok
+          (1880–1921).</p>
 
-    <p>There are obsessions. And then there’s Grogan’s relationship with the Russian poet Aleksandr Blok (1880–1921).</p>
+        <p>It began in St. Petersburg, 1998. Grogan was meant to be teaching English. Instead, he found himself in a
+          crumbling stairwell, clutching a samizdat copy of <em>The Twelve</em> and wondering why every Russian seemed
+          to walk with their soul outside their body.</p>
 
-    <p>It began in St. Petersburg, 1998. Grogan was meant to be teaching English. Instead, he found himself in a crumbling stairwell, clutching a samizdat copy of <em>The Twelve</em> and wondering why every Russian seemed to walk with their soul outside their body.</p>
+        <p>Blok’s poetry — mystical, doomed, aching with history — hit him like a communion chalice to the back of the
+          head. Grogan, already susceptible to ghostly voices and metaphysical rain, was hooked.</p>
 
-    <p>Blok’s poetry — mystical, doomed, aching with history — hit him like a communion chalice to the back of the head. Grogan, already susceptible to ghostly voices and metaphysical rain, was hooked.</p>
+        <p>In Blok, he found a brother in lyric exile: someone who worshipped beauty but also feared it. Someone who
+          loved the past so much it nearly killed him.</p>
 
-    <p>In Blok, he found a brother in lyric exile: someone who worshipped beauty but also feared it. Someone who loved the past so much it nearly killed him.</p>
+        <p>This devotion appears — sideways — in several G&B songs. <strong><em>Voice of the Mystic
+              Homeland</em></strong> owes its cadence to Blok’s symbolist rhythms. <strong><em>Without You</em></strong>
+          carries the same tremble between longing and ruin. Even <strong><em>La Mariée de Portbou</em></strong>, though
+          in French, is soaked in that Blokian atmosphere — where trains disappear, women become apparitions, and time
+          itself unravels into snow.</p>
 
-    <p>This devotion appears — sideways — in several G&B songs. <strong><em>Voice of the Mystic Homeland</em></strong> owes its cadence to Blok’s symbolist rhythms. <strong><em>Without You</em></strong> carries the same tremble between longing and ruin. Even <strong><em>La Mariée de Portbou</em></strong>, though in French, is soaked in that Blokian atmosphere — where trains disappear, women become apparitions, and time itself unravels into snow.</p>
+        <p>Brogan tolerates this fixation with the good humour of a man who once caught Grogan whispering “O mysterious
+          Lady” into a glass of kvass.</p>
 
-    <p>Brogan tolerates this fixation with the good humour of a man who once caught Grogan whispering “O mysterious Lady” into a glass of kvass.</p>
+        <p>But it runs deep. Blok gave Grogan permission — not to be Russian — but to be haunted. To carry the weight of
+          culture without needing to explain it. To write songs that ache not with memory, but with the <em>absence</em>
+          of memory.</p>
 
-    <p>But it runs deep. Blok gave Grogan permission — not to be Russian — but to be haunted. To carry the weight of culture without needing to explain it. To write songs that ache not with memory, but with the <em>absence</em> of memory.</p>
+        <p>As Grogan put it: <em>“I don’t understand Blok. That’s why I love him.”</em></p>
 
-    <p>As Grogan put it: <em>“I don’t understand Blok. That’s why I love him.”</em></p>
+        <p>And somewhere in a snowy alley of Petrograd, a ghost smiles through his pince-nez.</p>
 
-    <p>And somewhere in a snowy alley of Petrograd, a ghost smiles through his pince-nez.</p>
+        <p><strong>Grogan & Brogan</strong></p>
 
-    <p><strong>Grogan & Brogan</strong></p>
+      </span>
+      <a href="javascript:void(0);" id="entry8-link" onclick="toggleContent('entry8')">Read more</a>
+    </section>
 
-  </span>
-  <a href="javascript:void(0);" id="entry8-link" onclick="toggleContent('entry8')">Read more</a>
-</section>
+    <!-- Blog 19 Childhood Memories -->
+    <section class="blog-entry blog-post" data-category="life">
+      <h2>Grogan on Childhood Memories</h2>
+      <p class="date">Posted on 31 May 2025</p>
+      <p>Not all memories are golden. Some are turf-smoked, others half-sour. And some wear short trousers and never
+        quite leave...</p>
+      <img src="assets/grogan-childhood-small.jpg" alt="Grogan on Childhood Memories" class="blog-image"
+        style="max-width: 20%; height: auto; margin: 1em 0;" />
 
-<!-- Blog 19 -->
- <section class="blog-entry">
-  <h2>Grogan on Childhood Memories</h2>
-  <p class="date">Posted on 31 May 2025</p>
-  <p>Not all memories are golden. Some are turf-smoked, others half-sour. And some wear short trousers and never quite leave...</p>
-  <img src="assets/grogan-childhood-small.jpg" alt="Grogan on Childhood Memories" class="blog-image" style="max-width: 20%; height: auto; margin: 1em 0;" />
+      <span id="entry19" style="display:none;">
 
-  <span id="entry19" style="display:none;">
+        <p>🪀 <em>“The past is a goat in the living room. You can ignore it, but it will still eat your curtains.”</em>
+          — Grogan</p>
 
-    <p>🪀 <em>“The past is a goat in the living room. You can ignore it, but it will still eat your curtains.”</em> — Grogan</p>
+        <p>Grogan doesn’t talk much about childhood — unless he’s had poitín. Or heard the sound of a football against a
+          gable wall. Or caught the faint smell of wet linoleum and boiled ham. Then the veil lifts.</p>
 
-    <p>Grogan doesn’t talk much about childhood — unless he’s had poitín. Or heard the sound of a football against a gable wall. Or caught the faint smell of wet linoleum and boiled ham. Then the veil lifts.</p>
+        <p>There are glimpses in his songs. <strong><em>Your Father is Dead</em></strong> is a knife of a memory, drawn
+          from a real-life cruelty that left its mark in lowercase letters. It’s not sentimental — it’s surgical. And
+          true.</p>
 
-    <p>There are glimpses in his songs. <strong><em>Your Father is Dead</em></strong> is a knife of a memory, drawn from a real-life cruelty that left its mark in lowercase letters. It’s not sentimental — it’s surgical. And true.</p>
+        <p><strong><em>The Artist</em></strong> reaches back too — to a boy who saw the world differently and got
+          smacked for it. Who drew saints in biro and was told not to be soft. Who wanted a pencil, and got a rake.</p>
 
-    <p><strong><em>The Artist</em></strong> reaches back too — to a boy who saw the world differently and got smacked for it. Who drew saints in biro and was told not to be soft. Who wanted a pencil, and got a rake.</p>
+        <p>For Grogan, memory isn’t a scrapbook. It’s a battleground. Some of it tender. Some of it unbearable. And yet
+          — he never discards it. He shapes it into songs. He turns it, like turf, until it’s dry enough to burn.</p>
 
-    <p>For Grogan, memory isn’t a scrapbook. It’s a battleground. Some of it tender. Some of it unbearable. And yet — he never discards it. He shapes it into songs. He turns it, like turf, until it’s dry enough to burn.</p>
+        <p>Even the comic ones, like <strong><em>Mental Health in the West of Ireland (1968)</em></strong>, are filled
+          with echoes of boyhood misunderstanding — listening in on adult sadness without the language to name it.</p>
 
-    <p>Even the comic ones, like <strong><em>Mental Health in the West of Ireland (1968)</em></strong>, are filled with echoes of boyhood misunderstanding — listening in on adult sadness without the language to name it.</p>
+        <p>Brogan once found Grogan staring at a cracked toy fire engine and asked if he was alright. Grogan replied:
+          <em>“I’m grand. Just remembering what it’s like to be five and already broken-hearted.”</em></p>
 
-    <p>Brogan once found Grogan staring at a cracked toy fire engine and asked if he was alright. Grogan replied: <em>“I’m grand. Just remembering what it’s like to be five and already broken-hearted.”</em></p>
+        <p>He writes it down. He sings it. And somewhere in the song, the goat in the living room settles down. For a
+          while.</p>
 
-    <p>He writes it down. He sings it. And somewhere in the song, the goat in the living room settles down. For a while.</p>
+        <p><strong>Grogan & Brogan</strong></p>
 
-    <p><strong>Grogan & Brogan</strong></p>
+      </span>
+      <a href="javascript:void(0);" id="entry19-link" onclick="toggleContent('entry19')">Read more</a>
+    </section>
 
-  </span>
-  <a href="javascript:void(0);" id="entry19-link" onclick="toggleContent('entry19')">Read more</a>
-</section>
+    <!-- Blog 20 Islands of Ireland -->
 
+    <section class="blog-entry blog-post" data-category="travels">
+      <h2>Grogan & Brogan on the Islands of Ireland</h2>
+      <p class="date">Posted on 31 May 2025</p>
+      <p>Not every exile crosses an ocean. Some only drift a few miles west — and never return.</p>
+      <img src="assets/grogan-islands-small.jpg" alt="Grogan & Brogan on the Islands of Ireland" class="blog-image"
+        style="max-width: 20%; height: auto; margin: 1em 0;" />
 
-<!-- Blog 20  -->
+      <span id="entry20" style="display:none;">
 
-<section class="blog-entry">
-  <h2>Grogan & Brogan on the Islands of Ireland</h2>
-  <p class="date">Posted on 31 May 2025</p>
-  <p>Not every exile crosses an ocean. Some only drift a few miles west — and never return.</p>
-  <img src="assets/grogan-islands-small.jpg" alt="Grogan & Brogan on the Islands of Ireland" class="blog-image" style="max-width: 20%; height: auto; margin: 1em 0;" />
+        <p>⛴️ <em>“The sea isn’t water. It’s silence with weather.”</em> — Grogan, watching the Arranmore ferry vanish
+          in fog</p>
 
-  <span id="entry20" style="display:none;">
+        <p>Grogan has always had a thing for islands. Not just the obvious kind — the Inishbofins, Torys, and Valentias
+          — but the emotional ones. The psychic rock outcroppings where old people tell stories to the wind and children
+          leave without saying goodbye.</p>
 
-    <p>⛴️ <em>“The sea isn’t water. It’s silence with weather.”</em> — Grogan, watching the Arranmore ferry vanish in fog</p>
+        <p>He wrote <strong><em>Lost at Sea</em></strong> after staring out at Skellig Michael for too long. He claims
+          the island hummed back at him. Brogan thinks it was just hunger. Either way, the song speaks of those left
+          behind — and those who never came home.</p>
 
-    <p>Grogan has always had a thing for islands. Not just the obvious kind — the Inishbofins, Torys, and Valentias — but the emotional ones. The psychic rock outcroppings where old people tell stories to the wind and children leave without saying goodbye.</p>
+        <p>There’s something about islands in Irish consciousness. We project things onto them. Saints. Ghosts. Old
+          lovers. Wild goats. Grogan once spent a week on Clare Island talking to a stone circle and came back with
+          three verses and a sunburn.</p>
 
-    <p>He wrote <strong><em>Lost at Sea</em></strong> after staring out at Skellig Michael for too long. He claims the island hummed back at him. Brogan thinks it was just hunger. Either way, the song speaks of those left behind — and those who never came home.</p>
+        <p>In <strong><em>Fishing Boats at Sea</em></strong>, Grogan’s islands become metaphors for men — unreachable,
+          rugged, watching the world from afar. In <strong><em>The Emigrant’s Regret</em></strong>, the island is home:
+          a dot in the Atlantic that haunts the emigrant’s dreams like a prayer they forgot how to say.</p>
 
-    <p>There’s something about islands in Irish consciousness. We project things onto them. Saints. Ghosts. Old lovers. Wild goats. Grogan once spent a week on Clare Island talking to a stone circle and came back with three verses and a sunburn.</p>
+        <p>Brogan, as usual, is more practical: <em>“An island’s grand if you’ve a boat. Or a pub.”</em></p>
 
-    <p>In <strong><em>Fishing Boats at Sea</em></strong>, Grogan’s islands become metaphors for men — unreachable, rugged, watching the world from afar. In <strong><em>The Emigrant’s Regret</em></strong>, the island is home: a dot in the Atlantic that haunts the emigrant’s dreams like a prayer they forgot how to say.</p>
+        <p>But for Grogan, the islands are poems without stanzas. They don't need to rhyme. They just need to be.
+          Remote. Wounded. Defiant.</p>
 
-    <p>Brogan, as usual, is more practical: <em>“An island’s grand if you’ve a boat. Or a pub.”</em></p>
+        <p>We all carry a few islands inside us. Some with music. Some with silence. Some we’ll never visit again —
+          except in song.</p>
 
-    <p>But for Grogan, the islands are poems without stanzas. They don't need to rhyme. They just need to be. Remote. Wounded. Defiant.</p>
+        <p><strong>Grogan & Brogan</strong></p>
 
-    <p>We all carry a few islands inside us. Some with music. Some with silence. Some we’ll never visit again — except in song.</p>
+      </span>
+      <a href="javascript:void(0);" id="entry20-link" onclick="toggleContent('entry20')">Read more</a>
+    </section>
 
-    <p><strong>Grogan & Brogan</strong></p>
+    <!-- Blog 21 Butterflies of Ireland-->
 
-  </span>
-  <a href="javascript:void(0);" id="entry20-link" onclick="toggleContent('entry20')">Read more</a>
-</section>
+    <section class="blog-entry blog-post" data-category="countrylife">
+      <h2>Grogan & Brogan and the Butterflies of Ireland</h2>
+      <p class="date">Posted on 31 May 2025</p>
+      <p>They say butterflies don’t belong in Irish weather. But like poems, grief, and divilment — they come anyway.
+      </p>
+      <img src="assets/grogan-butterflies-small.jpg" alt="Grogan & Brogan and the Butterflies of Ireland"
+        class="blog-image" style="max-width: 20%; height: auto; margin: 1em 0;" />
 
-<!-- Blog 21 -->
+      <span id="entry21" style="display:none;">
 
-<section class="blog-entry">
-  <h2>Grogan & Brogan and the Butterflies of Ireland</h2>
-  <p class="date">Posted on 31 May 2025</p>
-  <p>They say butterflies don’t belong in Irish weather. But like poems, grief, and divilment — they come anyway.</p>
-  <img src="assets/grogan-butterflies-small.jpg" alt="Grogan & Brogan and the Butterflies of Ireland" class="blog-image" style="max-width: 20%; height: auto; margin: 1em 0;" />
+        <p>🦋 <em>“A butterfly is just a ghost with better timing.”</em> — Grogan</p>
 
-  <span id="entry21" style="display:none;">
+        <p>Grogan has long held a quiet obsession with Irish butterflies. Not in a collector’s way — he doesn’t pin or
+          label. He watches. He notes. He listens.</p>
 
-    <p>🦋 <em>“A butterfly is just a ghost with better timing.”</em> — Grogan</p>
+        <p>There’s a sense in his songs that butterflies are not insects, but messages. From where? From whom? He never
+          says. But in <strong><em>Voice of the Mystic Homeland</em></strong>, one drifts through the final verse like a
+          spirit choosing not to stay. In <strong><em>Rainbow</em></strong>, a butterfly appears beside the donkey —
+          both mysterious, both holy in their own stubborn way.</p>
 
-    <p>Grogan has long held a quiet obsession with Irish butterflies. Not in a collector’s way — he doesn’t pin or label. He watches. He notes. He listens.</p>
+        <p>Brogan calls them “fluttering lies from the hedge.” But even he paused once when a Painted Lady landed on his
+          guitar string and stayed for a full verse.</p>
 
-    <p>There’s a sense in his songs that butterflies are not insects, but messages. From where? From whom? He never says. But in <strong><em>Voice of the Mystic Homeland</em></strong>, one drifts through the final verse like a spirit choosing not to stay. In <strong><em>Rainbow</em></strong>, a butterfly appears beside the donkey — both mysterious, both holy in their own stubborn way.</p>
+        <p>In Irish folklore, butterflies can be the souls of the dead. In G&B mythology, they’re part of a deeper world
+          — not symbolic, but actual. They don’t represent freedom. They are freedom. Fleeting, lovely, impossible to
+          follow without losing yourself.</p>
 
-    <p>Brogan calls them “fluttering lies from the hedge.” But even he paused once when a Painted Lady landed on his guitar string and stayed for a full verse.</p>
+        <p>Grogan once chased a Green Hairstreak across the Burren and lost track of time for three hours. He returned
+          with a sunburn, a half-written stanza, and a wild look in his eyes. “She was teaching me a new scale,” he
+          said.</p>
 
-    <p>In Irish folklore, butterflies can be the souls of the dead. In G&B mythology, they’re part of a deeper world — not symbolic, but actual. They don’t represent freedom. They are freedom. Fleeting, lovely, impossible to follow without losing yourself.</p>
+        <p>And so they keep appearing. In lyrics. In gardens. In graveyards. On stage once, during <strong><em>Fishing
+              Boats at Sea</em></strong>, a Red Admiral landed on Grogan’s notebook. He closed it gently. The song ended
+          early that night.</p>
 
-    <p>Grogan once chased a Green Hairstreak across the Burren and lost track of time for three hours. He returned with a sunburn, a half-written stanza, and a wild look in his eyes. “She was teaching me a new scale,” he said.</p>
+        <p>Sometimes you follow the butterfly. Sometimes it follows you.</p>
 
-    <p>And so they keep appearing. In lyrics. In gardens. In graveyards. On stage once, during <strong><em>Fishing Boats at Sea</em></strong>, a Red Admiral landed on Grogan’s notebook. He closed it gently. The song ended early that night.</p>
+        <p><strong>Grogan & Brogan</strong></p>
 
-    <p>Sometimes you follow the butterfly. Sometimes it follows you.</p>
-
-    <p><strong>Grogan & Brogan</strong></p>
-
-  </span>
-  <a href="javascript:void(0);" id="entry21-link" onclick="toggleContent('entry21')">Read more</a>
-</section>
+      </span>
+      <a href="javascript:void(0);" id="entry21-link" onclick="toggleContent('entry21')">Read more</a>
+    </section>
 
 
   </main>
@@ -970,7 +1102,9 @@
   </footer>
 
   <!-- Link to external JavaScript file -->
+  <script src="assets/scripts/filter.js"></script>
   <script src="assets/scripts/blog.js"></script>
+
 </body>
 
 </html>
