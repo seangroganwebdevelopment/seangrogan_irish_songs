@@ -139,6 +139,8 @@ body {
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
+Blog Page 
+
 .blog-filter {
   margin: 1em 0;
   display: flex;
@@ -148,10 +150,12 @@ body {
 
 .blog-filter button {
   padding: 0.5em 1em;
+  margin-bottom: 0.5em;
+ 
   font-weight: bold;
   cursor: pointer;
   border: none;
-  background-color: #42504a;
+  background-color: #748d82;
   color: white;
   border-radius: 4px;
   transition: background-color 0.2s ease;
